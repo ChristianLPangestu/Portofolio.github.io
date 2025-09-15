@@ -1,0 +1,18 @@
+{
+  "pageTitle": "Portfolio Details",
+  "title": "Point of Sale (POS)",
+  "category": "Mobile Android Application",
+  "date": "16 June, 2024",
+  "links": [
+    {
+      "label": "Figma Prototype",
+      "href": "https://www.figma.com/proto/DZ6raLSXoVGz3YTgHDrz9H/Magang--Elgibor?node-id=3007-2837&t=dUVOVfYHZMNcyoTd-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3007%3A2837"
+    }
+  ],
+  "images": [
+    "assets/img/portfolio/P1.png",
+    "assets/img/portfolio/P2.png",
+    "assets/img/portfolio/P3.png"
+  ],
+  "description": "Development of an integrated restaurant POS (Point of Sale) system that allows customers to order and pay directly from their mobile devices. The system includes applications for cashiers, kitchen staff, and waiters, ensuring efficient workflow and fast customer service."
+}

@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": "pos",
+      "title": "POS",
+      "category": "Web",
+      "image": "assets/img/portfolio/P1.png",
+      "description": "Integrated restaurant POS ...",
+      "detailsLink": "portfolio-details.html?id=pos"
+    },
+    {
+      "id": "bdb",
+      "title": "Bingung di Bandung?",
+      "category": "Android",
+      "image": "assets/img/portfolio/o2.png",
+      "description": "Mobile app to find and explore...",
+      "detailsLink": "portfolio-details.html?id=bdb"
+    }
+  ]
+}

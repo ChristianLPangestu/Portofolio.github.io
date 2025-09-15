@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Portfolio Details",
+  "title": "Bingung di Bandung?",
+  "category": "Mobile Web Application",
+  "date": "April, 2024",
+  "links": [
+    {
+      "label": "Figma Prototype",
+      "href": "https://www.figma.com/proto/eH1fBd7I0jaJdfeLQmx0q2/Bingung-di-Bandung--App--Copy-?node-id=291-654&p=f&t=uwnJ5w2Oa9oNgiiC-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A3&starting-point-node-id=291%3A927"
+    }
+  ],
+  "images": [
+    "assets/img/portfolio/o1.png",
+    "assets/img/portfolio/o2.png",
+    "assets/img/portfolio/o3.png",
+    "assets/img/portfolio/o4.png"
+  ],
+  "description": "Bingung di Bandung is a mobile application designed to help users explore and discover popular attractions in Bandung. The app offers an intuitive interface with up-to-date information on local attractions, restaurants, and events. Utilizing Firebase for real-time data synchronization, it ensures a seamless user experience."
+}

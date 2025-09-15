@@ -1,0 +1,159 @@
+{
+  "hero.title": "Christian Lukito Pangestu",
+  "hero.im": "I'm",
+  "hero.roles": "Web Developer, Mobile Developer, UI/UX Designer",
+  "about.title": "About",
+  "about.lead1": "I build web and mobile applications with a focus on functionality and user experience. I also enjoy working on UI/UX design and learning more about cybersecurity.",
+  "about.heading": "Web & Mobile Developer",
+  "about.lead2": "I have experience in web and mobile application development using various modern technologies. Currently, I am deepening my expertise in UI/UX design to create intuitive and engaging user interfaces. In addition, I am also interested in cybersecurity to ensure the applications I develop are secure and reliable.",
+  "profile.birthday": "6 April 2003",
+  "profile.phone": "+62 813 9317 5678",
+  "profile.city": "Bekasi, Indonesia",
+  "profile.age.label": "Age",
+  "profile.degree": "Bachelor of Informatics",
+  "profile.email": "christian.lukito.pangestu@gmail.com",
+  "about.body1": "As a dedicated <strong><em>web and mobile developer</em></strong>, I specialize in creating <strong><em>dynamic, responsive applications</em></strong> that meet modern business needs. My expertise spans various programming languages and frameworks, allowing me to deliver <strong><em>robust solutions</em></strong> tailored to client specifications.",
+  "about.body2": "Whether it's building an <strong><em>intuitive user interface</em></strong> or developing <strong><em>secure back-end services</em></strong>, I approach every project with a focus on <strong><em>quality and performance</em></strong>. My passion for technology is matched by my commitment to <strong><em>continuous learning</em></strong>, ensuring I stay at the forefront of industry trends.",
+  "about.body3": "I'm always excited to take on <strong><em>new challenges</em></strong>, whether working independently or collaborating with a team. If you’re looking for a developer who can bring your ideas to life with <strong><em>creativity and precision</em></strong>, I’m here to help.",
+  "stats.workplaces.title": "Workplaces",
+  "stats.workplaces.desc": "Places where I've contributed my skills and expertise",
+  "stats.workplaces.count": 1,
+  "stats.workplaces.items": [
+    "CV Dwi Jaya Bersama, Semarang, Indonesia",
+    "PT Kalbe Farma Tbk, Jakarta, Indonesia"
+  ],
+  "stats.positions.title": "Positions",
+  "stats.positions.desc": "Roles that I've fulfilled",
+  "stats.positions.count": 3,
+  "stats.positions.items": [
+    "Web Developer Intern · CV Dwi Jaya Bersama, Semarang",
+    "Web Developer Intern · PT Kalbe Farma Tbk, Cikarang"
+  ],
+  "stats.projects.title": "Projects Managed",
+  "stats.projects.desc": "Projects I’ve taken from concept to completion",
+  "stats.projects.count": 3,
+  "stats.projects.items": [
+    "E-Logbook System · PT Kalbe Farma Tbk",
+    "POS System Development · CV Dwi Jaya Bersama, Semarang",
+    "Travel Information Application · Telkom University",
+    "Social Music Streaming Application · Telkom University"
+  ],
+  "stats.frameworks.title": "Framework",
+  "stats.frameworks.desc": "Technologies I have used in projects",
+  "stats.frameworks.count": 5,
+  "stats.frameworks.items": [
+    ".NET · E-Logbook (Kalbe Farma)",
+    "Laravel · POS",
+    "Flutter & Laravel · POS, Bingung di Bandung?",
+    "Firebase · Bingung di Bandung?, Jukee",
+    "Bootstrap"
+  ],
+  "skills.title": "Skills",
+  "skills.lead": "Showcasing my technical expertise and proficiency in multiple programming languages and tools.",
+  "skills.items": [
+    {
+      "name": "Laravel",
+      "value": 85
+    },
+    {
+      "name": "Flutter",
+      "value": 80
+    },
+    {
+      "name": "Java",
+      "value": 80
+    },
+    {
+      "name": "Python",
+      "value": 82
+    },
+    {
+      "name": "PHP",
+      "value": 85
+    },
+    {
+      "name": "SQL",
+      "value": 80
+    },
+    {
+      "name": "GitHub",
+      "value": 90
+    },
+    {
+      "name": "JavaScript",
+      "value": 75
+    }
+  ],
+  "resume.title": "Resume",
+  "resume.lead": "An overview of my path and achievements.",
+  "resume.summary.title": "Summary",
+  "resume.summary.name": "Christian Lukito",
+  "resume.summary.blurb": "Project Manager and Backend Developer with experience in mobile and web systems. I build robust solutions, ensure smooth integrations, and drive projects from concept to delivery.",
+  "resume.summary.location": "Bandung, Indonesia",
+  "resume.summary.phone": "+62 813 9317 5678",
+  "resume.summary.email": "christian.lukito.pangestu@gmail.com",
+  "resume.education.title": "Education",
+  "resume.education.items": [
+    {
+      "degree": "Bachelor of Informatics",
+      "period": "2021 – 2025",
+      "school": "Telkom University, Bandung",
+      "desc": "Coursework and projects in software engineering, machine learning, and data analysis."
+    },
+    {
+      "degree": "Science Program",
+      "period": "2018 – 2021",
+      "school": "SMA Negeri 3, Semarang",
+      "desc": "Strong foundation in natural sciences and analytical thinking."
+    }
+  ],
+  "resume.experience.title": "Professional Experience",
+  "resume.experience.items": [
+    {
+      "role": "Project Manager & Backend Developer Intern · Cashier Application Development",
+      "period": "Jun 2024 – Aug 2024",
+      "company": "CV Dwi Jaya Bersama, Semarang",
+      "bullets": [
+        "Led development of a cashier application that streamlines restaurant operations.",
+        "Prepared PRD, API docs, database schema, and application flow.",
+        "Designed the UI/UX to ensure an intuitive interface for staff and customers.",
+        "Built the Laravel backend for the customer-facing web app."
+        
+      ]
+    },
+    {
+      "role": "Web Developer Intern · E-Logbook System",
+      "period": "Sep 2024 – Dec 2024",
+      "company": "PT Kalbe Farma Tbk, cikarang",
+      "bullets": [
+        "Collaborated with cross-functional teams to develop an internal digital logbook system.",
+        "Built and optimized web-based features to improve documentation workflows.",
+        "Worked on both front-end and back-end tasks, including database integration and API development.",
+        "Contributed to ensuring compliance and data accuracy across enterprise-scale operations."
+      ]
+    }
+  ],
+  "portfolio.title": "Portfolio",
+  "portfolio.lead": "A selection of projects in design and development.",
+  "portfolio.filters.all": "All",
+  "portfolio.filters.web": "Web",
+  "portfolio.filters.android": "Android",
+  "portfolio.items": [
+    {
+      "title": "POS",
+      "category": "Web",
+      "image": "assets/img/portfolio/P1.png",
+      "description": "Integrated restaurant POS that lets customers order and pay from their phones. Includes apps for cashier, kitchen, and waiters.",
+      "detailsLink": "portfolio-details.html",
+      "galleryTitle": "App 1"
+    },
+    {
+      "title": "Bingung di Bandung?",
+      "category": "Android",
+      "image": "assets/img/portfolio/o2.png",
+      "description": "Mobile app to find and explore top spots in Bandung with real-time updates.",
+      "detailsLink": "portfolio-details2.html",
+      "galleryTitle": "Product 1"
+    }
+  ]
+}

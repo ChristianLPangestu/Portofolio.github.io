@@ -702,6 +702,23 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
+/* --- Stats list: bullets + hanging indent --- */
+.stats .stats-item ul {
+  list-style: disc outside;      /* aktifkan bullet standar */
+  padding-left: 1.25rem;         /* ruang untuk bullet */
+  margin: 8px 0 0 0;
+}
+
+.stats .stats-item ul li {
+  margin: 6px 0;                 /* jarak antar item */
+  line-height: 1.55;             /* baca lebih enak */
+}
+
+/* warna & ukuran bullet */
+.stats .stats-item ul li::marker {
+  color: var(--accent-color);
+  font-size: 0.9em;
+}
 .skills .progress {
   height: 60px;
   display: block;
@@ -1218,6 +1235,28 @@ section,
 .portfolio-details .portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+/* Styling untuk caption portfolio lightbox */
+.portfolio-details .portfolio-info h3,
+.portfolio-details .portfolio-info p {
+  display: none; /* kalau mau benar-benar hilangkan caption */
+}
+
+/* Atau kalau mau tetap tampilkan judul di tengah bawah */
+.glightbox-clean .gdesc-inner {
+  background: none !important;  /* hapus background putih */
+  text-align: center;           /* teks ke tengah */
+  color: #fff !important;       /* teks jadi putih agar kontras */
+  font-size: 18px;              /* atur ukuran font */
+  font-weight: 600;
+  bottom: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+}
+.glightbox-clean .gdesc-inner {
+  display: none !important;
 }
 
 /*--------------------------------------------------------------

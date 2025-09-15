@@ -1,0 +1,98 @@
+/**
+ * Portfolio Details — page-local styles
+ * File: assets/css/portfolio-details.css
+ * Depends on color vars from main.css (e.g., --accent-color, --contrast-color)
+ */
+
+/* -----------------------------
+   Back button: shared styles
+------------------------------ */
+:root {
+    /* tweak once if you want a different vertical spacing */
+    --pd-back-gap: 16px;
+    --pd-back-shadow: 0 10px 35px rgba(0, 0, 0, .10);
+    --pd-back-shadow-active: 0 8px 24px rgba(0, 0, 0, .12);
+}
+
+.portfolio-details-page .btn-back-inline,
+.portfolio-details-page .btn-back-fixed {
+    width: 44px;
+    /* sama lebar & tinggi -> bulat */
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--pd-back-shadow);
+    transition: background-color .2s ease, box-shadow .2s ease, transform .15s ease;
+    text-decoration: none;
+    margin-block: var(--pd-back-gap);
+    /* jarak atas = jarak bawah */
+}
+
+/* Hover / focus: made brighter like other buttons */
+.portfolio-details-page .btn-back-inline:hover,
+.portfolio-details-page .btn-back-inline:focus-visible,
+.portfolio-details-page .btn-back-fixed:hover,
+.portfolio-details-page .btn-back-fixed:focus-visible {
+    background-color: color-mix(in srgb, var(--accent-color), white 15%);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .14);
+    outline: none;
+}
+
+/* Pressed feel */
+.portfolio-details-page .btn-back-inline:active,
+.portfolio-details-page .btn-back-fixed:active {
+    transform: translateY(1px);
+    box-shadow: var(--pd-back-shadow-active);
+}
+
+/* Icon inside the button */
+.portfolio-details-page .btn-back-inline i,
+.portfolio-details-page .btn-back-fixed i {
+    font-size: 1.1rem;
+    /* bootstrap-icons arrow-left-short */
+    line-height: 0;
+}
+
+/* -----------------------------
+   Placement variants
+------------------------------ */
+
+/* Inline variant: put above the slider inside the .container */
+.portfolio-details-page .btn-back-inline {
+    /* equal top & bottom spacing — keep bottom as-is, match the top */
+    margin-block: var(--pd-back-gap);
+}
+
+/* Fixed variant: top-left of content area (optional) */
+.portfolio-details-page .btn-back-fixed {
+    position: fixed;
+    z-index: 9998;
+    /* header is 300px wide on desktop; keep some breathing room on the left */
+    left: calc(300px + 24px);
+    /* sit below the dark page title bar; adjust if needed */
+    top: calc(60px + var(--pd-back-gap));
+}
+
+/* On <1200px, the side header collapses, so pin to viewport edge */
+@media (max-width: 1199px) {
+    .portfolio-details-page .btn-back-fixed {
+        left: 16px;
+        top: calc(60px + var(--pd-back-gap));
+    }
+}
+
+/* samakan gap atas & bawah tombol back */
+#portfolio-details.section {
+    padding-top: 0;
+    /* hilangkan padding 60px bawaan section */
+}
+
+/* bawah tombol sudah 18px dari rules sebelumnya; samakan bagian atas */
+.btn-back-inline {
+    margin-top: 18px;
+    /* biarkan margin-bottom tetap seperti sekarang */
+}

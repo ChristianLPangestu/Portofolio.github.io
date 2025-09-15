@@ -1,420 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title data-i18n="site.name">portfolio</title>
+
+  <!-- SEO / Open Graph (optional diisi via server atau biarkan statis) -->
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+  <meta property="og:title" content="Christian Lukito Pangestu" />
+  <meta property="og:description" content="Web & Mobile Developer with UI/UX experience" />
+  <meta property="og:image" content="assets/img/profil3.jpg" />
+  <meta property="og:type" content="website" />
 
   <!-- Favicons -->
-  <link href="assets/img/icon1.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/icon1.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Poppins:wght@100..900&family=Raleway:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet" />
 </head>
 
 <body class="index-page">
-
+  <!-- ==================== Header ==================== -->
   <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <button class="header-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></button>
 
     <div class="profile-img">
-      <img src="assets/img/profil3.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/profil3.jpg" alt="Profile photo" class="img-fluid rounded-circle" />
     </div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename text-center">Christian Lukito Pangestu</h1>
+    <a href="#hero" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename text-center" data-i18n="site.name">Christian Lukito Pangestu</h1>
     </a>
 
     <div class="social-links text-center">
-      <a href="mailto:christianlukitop@gmail.com" class="email" target="_blank"><i class="bi bi-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/christianpangestu/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/ChristianLPangestu" class="github" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="mailto:christianlukitop@gmail.com" class="email" target="_blank" aria-label="Email">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/christianpangestu/" class="linkedin" target="_blank" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://github.com/ChristianLPangestu" class="github" target="_blank" aria-label="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
     </div>
 
-    <nav id="navmenu" class="navmenu">
+    <nav id="navmenu" class="navmenu" aria-label="Main navigation">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>portfolio</span></a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="main">
-
-    <!-- Hero Section -->
+    <!-- ==================== Hero ==================== -->
     <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/bg.jpg" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/bg.jpg" alt="Background image" data-aos="fade-in" />
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Christian Lukito Pangestu</h2>
-        <p>I'm <span class="typed" data-typed-items=" Web Developer, Mobile Developer, UI/UX Designer, "> UI/UX Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <h2 data-i18n="hero.title">Christian Lukito Pangestu</h2>
+        <p id="hero-line">
+          <span data-i18n="hero.im">I'm</span>
+          <span class="typed"></span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== About ==================== -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="about.title">About</h2>
+        <p data-i18n="about.lead1"></p>
       </div>
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>I am a dedicated Web & Mobile developer, focusing on web and mobile application development. In addition, I also have expertise as a UI/UX designer and interested in cybersecurity.</p>
-      </div><!-- End Section Title -->
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/profil4.jpg" class="img-fluid" alt="">
+            <img src="assets/img/profil4.jpg" class="img-fluid" alt="Profile side photo" />
           </div>
+
           <div class="col-lg-8 content">
-            <h2>Web &amp; Mobile Developer</h2>
-            <p class="fst-italic py-3">
-              I have experience in web and mobile application development using various modern technologies. Currently, I am deepening my expertise in UI/UX design to create intuitive and engaging user interfaces. In addition, I am also interested in cybersecurity to ensure the applications I develop are secure and reliable.
-            </p>
+            <h2 data-i18n="about.heading">Web &amp; Mobile Developer</h2>
+            <p class="fst-italic py-3" data-i18n="about.lead2"></p>
+
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>6 April 2003</span></li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 813 9317 5678</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bandung, Indonesia</span></li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Birthday:</strong>
+                    <span data-i18n="profile.birthday"></span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Phone:</strong>
+                    <span data-i18n="profile.phone"></span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>City:</strong>
+                    <span data-i18n="profile.city"></span>
+                  </li>
                 </ul>
               </div>
+
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="age"></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Undergraduate Student</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>christianlukitop@gmail.com</span></li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong data-i18n="profile.age.label">Age</strong>:
+                    <span id="age"></span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Degree:</strong>
+                    <span data-i18n="profile.degree"></span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Email:</strong>
+                    <span data-i18n="profile.email"></span>
+                  </li>
                 </ul>
               </div>
             </div>
-            <p class="py-1">
-              As a dedicated <strong><em>web and mobile developer</em></strong>, I specialize in creating <strong><em>dynamic, responsive applications</em></strong> that meet modern business needs. My expertise spans various programming languages and frameworks, allowing me to deliver <strong><em>robust solutions</em></strong> tailored to client specifications.
-          </p>
-          
-          <p class="py-1">
-              Whether it's building an <strong><em>intuitive user interface</em></strong> or developing <strong><em>secure back-end services</em></strong>, I approach every project with a focus on <strong><em>quality and performance</em></strong>. My passion for technology is matched by my commitment to <strong><em>continuous learning</em></strong>, ensuring I stay at the forefront of industry trends.
-          </p>
-          
-          <p class="py-1">
-              I'm always excited to take on <strong><em>new challenges</em></strong>, whether working independently or collaborating with a team. If you’re looking for a developer who can bring your ideas to life with <strong><em>creativity and precision</em></strong>, I’m here to help.
-          </p>
+
+            <p class="py-1" data-i18n="about.body1"></p>
+            <p class="py-1" data-i18n="about.body2"></p>
+            <p class="py-1" data-i18n="about.body3"></p>
           </div>
         </div>
       </div>
-      <!-- Stats Section -->
-    <section id="stats" class="stats section">
+
+      <!-- Stats -->
+      <section id="stats" class="stats section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4" id="stats-container"></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ==================== Skills ==================== -->
+    <section id="skills" class="skills section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="skills.title">Skills</h2>
+        <p data-i18n="skills.lead"></p>
+      </div>
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-building"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong style="font-size: 24px;">Workplaces</strong> <br> Places where I've contributed my skills and expertise</p>
-              <ul>
-                <li><strong>CV Dwi Jaya Bersama</strong>, Semarang, Indonesia</li>
-              </ul>
-            </div>
-          </div><!-- End Stats Item -->
-    
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-person-badge"></i>
-              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong style="font-size: 24px;">Positions</strong> <br> Various roles that I've successfully fulfilled</p>
-              <ul>
-                <li><strong>Project Manager</strong>, CV Dwi Jaya Bersama, Semarang</li>
-                <li><strong>Backend Developer</strong>, CV Dwi Jaya Bersama, Semarang</li>
-                <li><strong>UI/UX Designer</strong>, CV Dwi Jaya Bersama, Semarang</li>
-              </ul>
-            </div>
-          </div><!-- End Stats Item -->
-    
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-clipboard-check"></i>
-              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong style="font-size: 24px;">Projects Managed</strong> <br> Projects I’ve taken from concept to completion</p>
-              <ul>
-                <li><strong>POS System Development</strong>, CV Dwi Jaya Bersama, Semarang</li>
-                <li><strong>Travel Information Application</strong>, Telkom University</li>
-                <li><strong>Social Music Streaming Application</strong>, Telkom University</li>
-              </ul>
-            </div>
-          </div><!-- End Stats Item -->
-    
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-folder2-open"></i>
-              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong style="font-size: 24px;">Framework</strong> <br> The number of impactful projects I've been a part of</p>
-              <ul>
-                <li><strong>Laravel</strong>, POS</li>
-                <li><strong>Flutter</strong>, POS, Bingung di Bandung?</li>
-                <li><strong>Firebase</strong>, Bingung di Bandung?, Jukee</li>
-                <li><strong>Bootstrap</strong></li>
-              </ul>
-            </div>
-          </div> <!-- End Stats Item--> 
-    
-        </div>
+        <div class="row skills-content skills-animation" id="skills-container"></div>
       </div>
-    </section><!-- End Stats Section -->
+    </section>
 
-    </section><!-- /About Section -->
-
-    
-    
-    
-    
-
-
-    <!-- Skills Section -->
-<section id="skills" class="skills section light-background">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Skills</h2>
-    <p>Showcasing my technical expertise and proficiency in multiple programming languages and tools.</p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row skills-content skills-animation">
-
-      <div class="col-lg-6">
-
-        <div class="progress">
-          <span class="skill"><span>Laravel</span> <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <div class="progress">
-          <span class="skill"><span>Flutter</span> <i class="val">80%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <div class="progress">
-          <span class="skill"><span>Java</span> <i class="val">80%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <div class="progress">
-          <span class="skill"><span>Python</span> <i class="val">82%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-      </div>
-
-      <div class="col-lg-6">
-
-        <div class="progress">
-          <span class="skill"><span>PHP</span> <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <div class="progress">
-          <span class="skill"><span>SQL</span> <i class="val">80%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <div class="progress">
-          <span class="skill"><span>GitHub</span> <i class="val">90%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-        <div class="progress">
-          <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div><!-- End Skills Item -->
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
+    <!-- ==================== Resume ==================== -->
     <section id="resume" class="resume section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>
-          An Overview of My Career Path and Achievements.
-        </p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Christian Lukito</h4>
-              <p><em>Experienced Project Manager and Backend Developer with a strong background in developing and managing mobile applications and web systems. Expertise in creating robust solutions for various industries, ensuring seamless integration, and driving projects from concept to completion</em></p>
-              <ul>
-                <li>Bandung, Indonesia</li>
-                <li>+62 813 9317 5678</li>
-                <li>christianlukitop@gmail.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Undergraduate in Informatics</h4>
-              <h5>2021- Present</h5>
-              <p><em>Telkom University, Bandung</em></p>
-              <p>Studying at Telkom University's prestigious Informatics Department, I am immersed in a dynamic learning environment focused on cutting-edge technology and innovation. Through rigorous coursework and hands-on projects, I have developed a strong foundation in computer science principles, software engineering, machine learning, and data analysis</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Science Program</h4>
-              <h5>2018 - 2021</h5>
-              <p><em>SMA Negeri 3, Semarang</em></p>
-              <p>Graduated from Public High School 3 Semarang, where I pursued Sciences Program. This academic track provided me with a solid understanding of scientific principles and methodologies, with a strong foundation in natural sciences</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Project Manager & Backend Developer Intern · Cashier Application Development</h4>
-              <h5>Jun 2024 - Aug 2024</h5>
-              <p><em>CV Dwi Jaya Bersama, Semarang</em></p>
-              <ul>
-                <li>Served as a Project Manager and Backend Developer intern, leading the development of a cashier application that streamlines restaurant operations by integrating order-taking processes</li>
-                <li>Managed documentation such as PRD, API documentation, database, and application flow</li>
-                <li>Developed the Laravel backend for the customer-facing web mobile application</li>
-                <li>Designed the UI/UX for the cashier application, ensuring an intuitive and user-friendly interface for both staff and customers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-          </div>
-
-        </div>
-
+        <h2 data-i18n="resume.title">Resume</h2>
+        <p data-i18n="resume.lead"></p>
       </div>
 
-    </section><!-- /Resume Section -->
+      <div class="container">
+        <div class="row" id="resume-row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100" id="resume-left"></div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" id="resume-right"></div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Portfolio Section -->
+    <!-- ==================== portfolio ==================== -->
     <section id="portfolio" class="portfolio section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Highlighting a curated selection of my projects, demonstrating expertise in design, development, and creative problem-solving across various industries.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Web</li>
-            <li data-filter=".filter-product">Android</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/P1.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>POS</h4>
-                  <p>Development of an integrated restaurant POS (Point of Sale) system that allows customers to order and pay directly from their mobile devices. The system includes applications for cashiers, kitchen staff, and waiters, ensuring efficient workflow and fast customer service.</p>
-                  <a href="assets/img/portfolio/P1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/o2.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Bingung di Bandung?</h4>
-                  <p>Bingung di Bandung is a mobile app that helps users quickly find and explore top spots in Bandung with real-time updates.</p>
-                  <a href="assets/img/portfolio/o2.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details2.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
+        <h2 data-i18n="portfolio.title">portfolio</h2>
+        <p data-i18n="portfolio.lead"></p>
       </div>
 
-    </section><!-- /Portfolio Section -->
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100" id="portfolio-filters"></ul>
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200" id="portfolio-container"></div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- ==================== Footer ==================== -->
   <footer id="footer" class="footer position-relative">
-
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Christian Lukito Pangestu</strong> <span>All Rights Reserved</span></p>
+      <div class="copyright text-center">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename" data-i18n="site.name">Christian Lukito Pangestu</strong>
+          <span>All Rights Reserved</span>
+        </p>
       </div>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/" rel="noopener" target="_blank">BootstrapMade</a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
-  <div id="preloader"></div>
+  <div id="preloader" aria-hidden="true"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -426,9 +238,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
